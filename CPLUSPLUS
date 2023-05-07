@@ -1,0 +1,89 @@
+/******************************************************************************
+WEATHER APP
+
+NAME : Vanmathi.M 
+COLLEGE : VIVEKANANDHA COLLEGE OF ENGINEERING FOR WOMEN
+STATEMENT USED:
+SWITCH STATEMENT
+
+DATAS INCLUDE :
+  EMAIL , lOCATION 
+  1.TODAY
+  2.TOMORROW
+  3.YESTERDAY
+  4.WEEK REPORT 
+  CLIMATE 
+  TEMPERATURE
+                              
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int main()
+{
+    string emailid;
+    string location;
+    int report;
+    int Temperature;
+    string climate;
+    cout<<"!!!...WEATHER APP...!!!"<<endl;
+    cout<<"_________________________________"<<endl;
+    cout<<"***WELCOME THE WEATHER APP***"<<endl;
+    cout<<"_________________________________"<<endl;
+    cout<<"ENTER YOUR EMAIL ID  : "<<endl;
+    cin>>emailid;
+    cout<<"ENTER YOUR CURRENT LOCATION :"<<endl;
+    cin>> location;
+    cout<<"WEATHER REPORTS......"<<endl;
+    cout<< "1. TODAY REPORT \n";
+    cout<<" 2. TOMORROW REPORT\n";
+    cout<<" 3. YESTERDAY REPORT \n";
+    cout<<" 4. WEEKLY REPORT \n";
+    cout<<"\n ENTER THE REPORT YOU NEED (1-4) :";
+    cin>>report;
+    switch(report)
+    {
+        case 1:
+          {
+             cout<<"climate =CLOUDY"<<endl;
+             cout<<"Temperature=22°"<<endl;
+             break;
+          }
+       case 2:
+         {
+           cout<<"climate =THUNDERSTORM"<<endl;
+           cout<<"Temperature=20°"<<endl;
+         break;
+         }
+      case 3:
+     {
+        cout<<"climate =RAINY"<<endl;
+        cout<<"Temperature=15°"<<endl;
+     break;
+     }
+     case 4:
+     {
+        cout<<"climate =SUNNY"<<endl;
+        cout<<"Temperature=29°"<<endl;
+    break;
+     }
+     case 5:
+     {
+        cout<<"climate=DRY"<<endl;
+        cout<<"Temperature=36°"<<endl;
+     break;
+     }
+     case 6:
+     {
+         cout<<"climate =HEATWAVES"<<endl;
+         cout<<"Temperature =30°"<<endl;
+     break;
+     }
+    default:
+    {
+        cout<<" selection invalid.. try another option :"<<endl;
+        break;
+    }
+}
+    cout<<"\n *****THANK YOU *****!!!visit again !!!**";
+    return 0;
+}
